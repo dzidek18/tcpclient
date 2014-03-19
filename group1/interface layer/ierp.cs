@@ -7,8 +7,5 @@ namespace group1.interface_layer
 {
     class ierp
     {
-sdddddddddd
-sdddddddd
-sdddddddd
     }
 }
