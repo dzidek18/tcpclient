@@ -15,7 +15,7 @@ namespace tcpclient
             TcpClient client = new TcpClient("62.75.224.28", 6789);
             int a = 0;
             try
-            {//bla bla bla bla bla  nice work Col. Youre getting paid in beer soon.
+            {//bla bla bla bla bla
                 Stream s = client.GetStream();
                 StreamReader sr = new StreamReader(s);
                 StreamWriter sw = new StreamWriter(s);
@@ -23,16 +23,8 @@ namespace tcpclient
                 string ret;
                 while (true)
                 {
-                    Console.WriteLine("Name: " + "\n");
-                    string name = (a++.ToString());
-                    sw.WriteLine(name);
-                    ret = sr.ReadLine();
-                    Console.WriteLine(ret);
-
-                    string message = Console.ReadLine();
-                    sw.WriteLine(message);
-                    ret = sr.ReadLine();
-                    Console.WriteLine(ret);
+                    so what happens now?
+                    //
                 }
                 s.Close();
             }
