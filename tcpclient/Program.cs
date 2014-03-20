@@ -21,18 +21,19 @@ namespace tcpclient
                 StreamWriter sw = new StreamWriter(s);
                 sw.AutoFlush = true;
                 string ret;
+                while (true)
+                {
+                    Console.WriteLine("Name: " + "\n");
+                    string name = (a++.ToString());
+                    sw.WriteLine(name);
+                    ret = sr.ReadLine();
+                    Console.WriteLine(ret);
 
-                Console.WriteLine("Name: " + "\n");
-                string name = (a++.ToString());
-                sw.WriteLine(name);
-                ret=sr.ReadLine();
-                Console.WriteLine(ret);
-
-                string message = Console.ReadLine();
-                sw.WriteLine(message);
-                ret = sr.ReadLine();
-                Console.WriteLine(ret);
-                             
+                    string message = Console.ReadLine();
+                    sw.WriteLine(message);
+                    ret = sr.ReadLine();
+                    Console.WriteLine(ret);
+                }
                 s.Close();
             }
             finally
