@@ -15,7 +15,7 @@ namespace tcpclient
             TcpClient client = new TcpClient("62.75.224.28", 6789);
             int a = 0;
             try
-            {
+            {//bla bla bla bla bla
                 Stream s = client.GetStream();
                 StreamReader sr = new StreamReader(s);
                 StreamWriter sw = new StreamWriter(s);
