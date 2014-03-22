@@ -7,5 +7,6 @@ namespace tcpclient
 {
     class pupa
     {
+        srdsrtert;
     }
 }
